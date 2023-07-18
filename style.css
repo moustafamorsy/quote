@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lugrasimo', cursive;
+   
+}
+body{
+ background-image: url(Untitled-1.png); 
+background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.head{
+    text-align: center;
+}
+
+.container{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    border: 4px solid  rgb(219, 171, 171);
+    border-radius: 10px;
+    position: relative;
+     clip-path: polygon(30px 0, 100% 0, 100% 270px, 92% 100%, 0 100%, 0 30px);
+}
+.head button{
+    padding:15px ;
+    border:none;
+    background-color:rgb(250, 147, 128);
+    color:white;
+    font-weight:bold;
+     margin-bottom:50px;
+     border-radius: 5px;
+}
+
+#quote{
+    padding: 50px;
+    text-align: center;
+    font-size: 12px;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+#quote h3{
+    font-size: 18px;
+    margin-top: 10px;
+   
+}
+.head p{
+    margin: 20px 0px
+}
+.d{
+    position: relative;
+}
+
+#demo{
+    margin: 0px 15px;
+}
+
+.d i:nth-child(2){
+   overflow: hidden;
+    padding: 10px;
+      padding-right:30px;
+    position: absolute;
+    top:-15px;
+    left:-15px;
+    font-size: 25px;
+     z-index: -1;
+     color: rgb(187, 90, 90);
+    }
+.d i:nth-child(3){
+    background-color: transparent;
+    z-index: -1;
+    padding: 10px;
+      padding-right:30px;
+    position: absolute;
+    bottom:-15px;
+    right: -15px;
+    font-size: 25px;
+    transform: rotate(180deg);
+    color: rgb(187, 90, 90);
+}
+
+@media only screen and (min-width: 960px) {
+    .box{
+        border: 4px solid  rgb(219, 171, 171);
+        border-radius: 10px;
+        position: relative;
+         clip-path: polygon(30px 0, 100% 0, 100% 270px, 96% 100%, 0 100%, 0 30px);
+    }
+  }
